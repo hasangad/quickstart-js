@@ -75,9 +75,34 @@ limitations under the License.
 <!-- Import and configure the Firebase SDK -->
 <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
 <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
-<script src="/__/firebase/3.9.0/firebase-app.js"></script>
+
+<!--<script src="/__/firebase/3.9.0/firebase-app.js"></script>
 <script src="/__/firebase/3.9.0/firebase-messaging.js"></script>
-<script src="/__/firebase/init.js"></script>
+<script src="/__/firebase/init.js"></script>-->
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.3.0/init.js"></script>
+
+<!-- Leave out Storage -->
+<!-- <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase-storage.js"></script> -->
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBglg1onsBSIj4tXTsY5MwfhUF-9gCRNTM",
+    authDomain: "hgb-push-notifications-b3130.firebaseapp.com",
+    databaseURL: "https://hgb-push-notifications-b3130.firebaseio.com",
+    projectId: "hgb-push-notifications-b3130",
+    storageBucket: "hgb-push-notifications-b3130.appspot.com",
+    messagingSenderId: "499005818743"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <script>
   // [START get_messaging_object]
